@@ -1,0 +1,20 @@
+{
+  "bookings": [
+    {
+      "id": 1,
+      "service": "Plumbing",
+      "date": "2024-07-01",
+      "time": "10:00 AM",
+      "customer": "John Doe",
+      "status": "Confirmed"
+    },
+    {
+      "id": 2,
+      "service": "Electrical",
+      "date": "2024-07-02",
+      "time": "02:00 PM",
+      "customer": "Jane Smith",
+      "status": "Pending"
+    }
+  ]
+}
