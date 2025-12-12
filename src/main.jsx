@@ -10,6 +10,7 @@ import CustomerDashboard from './Pages/CustomerDashboard.jsx'
 import Home from './Pages/Home.jsx'
 import ProviderDashboard from './Pages/ProviderDashboard.jsx'
 import Booking from './Pages/Booking.jsx'
+import ServiceProviderRegistration from './Pages/ServiceProviderRegistration.jsx'
 
 
 const routerVariables = createBrowserRouter([
@@ -38,6 +39,10 @@ const routerVariables = createBrowserRouter([
             element: <Home/>,
         },
         {
+            index: true,
+            element: <Home/>,
+        },
+        {
             path: '/provider-dashboard',
             element: <ProviderDashboard/>,
         },
@@ -45,13 +50,17 @@ const routerVariables = createBrowserRouter([
             path: '/service-details',
             element: <ServiceDetails/>,
         },
-
+        {
+            path: '/provider-registration',
+            element: <ServiceProviderRegistration/>,
+        },
         {
             path: '*',
             element: <h1>Page Not Found</h1>,
         }
     ]
-}]);
+  }
+]);
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={routerVariables}></RouterProvider>
