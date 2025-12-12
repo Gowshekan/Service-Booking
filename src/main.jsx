@@ -10,6 +10,8 @@ import CustomerDashboard from './Pages/CustomerDashboard.jsx'
 import Home from './Pages/Home.jsx'
 import ProviderDashboard from './Pages/ProviderDashboard.jsx'
 import Booking from './Pages/Booking.jsx'
+import NewServices from './Pages/New-Services.jsx'
+import PrivateRoute from './components/PrivateRoute.jsx'
 
 
 const routerVariables = createBrowserRouter([
@@ -44,6 +46,11 @@ const routerVariables = createBrowserRouter([
         {
             path: '/service-details',
             element: <ServiceDetails/>,
+        },
+    
+        {
+            path: '/NewServices',
+            element: <PrivateRoute><NewServices/></PrivateRoute>,
         },
         {
             path: '*',
